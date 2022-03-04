@@ -1,0 +1,92 @@
+.accordion {
+  background-color: F6F6F6;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px 32px;
+
+  background: #f7f7f7;
+  border-radius: 20px;
+  margin: 8px 0;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+  padding-left: 32px;
+}
+
+.active2,
+.accordion:hover {
+  background-color: #f7f7f7;
+}
+
+.active2 {
+  box-shadow: 0px -6px 16px rgba(102, 78, 164, 0.1);
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 0;
+}
+
+.panel {
+  box-shadow: 0px 10px 16px rgba(102, 78, 164, 0.1);
+  border-radius: 0 0 20px 20px;
+  margin-top: 0;
+
+  p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin: 22px 0px;
+    padding-left: 12px;
+  }
+}
+
+.accordion:after {
+  content: "\2192";
+  color: #777;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.active2:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq_accordion {
+  max-width: 774px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 7.625rem;
+
+  h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 65px;
+    color: #664ea4;
+  }
+}

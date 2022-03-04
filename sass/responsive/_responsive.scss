@@ -1,0 +1,128 @@
+@media only screen and (max-width: 1156px) {
+  nav {
+    justify-content: space-between !important;
+
+    button.join,
+    .separator,
+    ul,
+    a {
+      display: none !important;
+    }
+
+    .hamburger {
+      display: block !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .facilities {
+    flex-direction: column !important;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+
+    & > div {
+      width: 100%;
+    }
+
+    div {
+      ul {
+        margin: 0 auto;
+        padding-left: 30px;
+      }
+
+      h2 {
+        // text-align: center;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .appointment {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-bottom: 2.875rem;
+
+    img {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    & > div {
+      width: 100%;
+    }
+
+    .form_container {
+      padding: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    .top-section {
+      flex-direction: column;
+      gap: 40px;
+      padding-left: 44px;
+    }
+
+    .bottom-section {
+      flex-direction: column;
+      gap: 24px;
+      justify-content: flex-start;
+
+      ul {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      input[type="email"] {
+        width: 80vw !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body > footer > div.top-section > section {
+    flex-direction: column !important;
+  }
+
+  .cta {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+  .header_cta h1 {
+    font-size: 36px !important;
+  }
+
+  .appointment {
+    form {
+      input,
+      select {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+    button[type="submit"] {
+      width: 100% !important;
+    }
+  }
+}

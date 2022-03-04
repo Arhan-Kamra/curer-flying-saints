@@ -1,0 +1,125 @@
+.appointment {
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: 9.3125rem;
+
+  img {
+    max-width: 100%;
+  }
+
+  & > div {
+    width: 50%;
+  }
+
+  .form_container {
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h2 {
+    // width: 346px;
+    // height: 77px;
+
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #323756;
+    text-transform: capitalize;
+    margin: 17px 0px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    label {
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      color: #000000;
+      text-transform: capitalize;
+
+      sup {
+        font-weight: 600;
+      }
+    }
+
+    input,
+    select {
+      width: 345.5px;
+      height: 48px;
+
+      border: 0.5px solid #c5c5c5;
+      border-radius: 87px;
+      background-color: transparent;
+      transition: all 150ms ease 0ms;
+
+      &:focus {
+        outline: none;
+        border: 1px solid #2caea6;
+      }
+    }
+
+    input {
+      box-sizing: border-box;
+      padding: 18px;
+    }
+
+    select {
+      box-sizing: border-box;
+      padding: 8px 18px;
+      optgroup {
+        background-color: #bbb;
+
+        &:hover {
+          background-color: #bbb !important;
+        }
+      }
+    }
+
+    button[type="submit"] {
+      width: 345px;
+      height: 48px;
+      background-color: #664ea4;
+      border-radius: 87px;
+      border: none;
+      outline: none;
+      color: #fff;
+      text-transform: capitalize;
+
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      transition: all 150ms ease 0ms;
+
+      &:hover {
+        background-color: #2caea6;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
